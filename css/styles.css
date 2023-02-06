@@ -121,6 +121,7 @@ img {
 .link {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .button {
@@ -177,12 +178,12 @@ body {
   top: 0;
   transform: translate(-55%, 0);
   display: flex;
-  justify-content: center; */
+  justify-content: center;  for fixed header*/
   border-bottom: 1px solid var(--header-border-color);
   box-shadow: var(--header-box-shadow);
 }
 .header-container {
-  /* position: fixed; */
+  /* position: fixed;  for fixed header*/
   display: flex;
   justify-content: space-between;
 }
@@ -273,7 +274,7 @@ body {
   /* margin-top: 72px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 0; */
+  margin-bottom: 0;  for fixed header*/
   margin: 0 auto;
   background: var(--hero-bgr-color);
   max-width: 1440px;
@@ -553,7 +554,7 @@ body {
 
 /* --------------- PORTFOLIO BUTTONS--------------- */
 .portfolio {
-  /* padding-top: 168px; */
+  /* padding-top: 168px;  for fixed header*/
   padding-top: 96px;
   padding-bottom: 120px;
 }
