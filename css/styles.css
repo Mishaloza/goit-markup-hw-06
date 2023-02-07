@@ -38,8 +38,14 @@
   --footer-bgr-color: #2e2f42;
   --footer-logo-studio-color: #f4f4fd;
   --footer-subtitle-color: #e7e9fc;
+  --footer-subtitle-social-media-text-color: #ffffff;
+  --footer-subtitle-subscribe-form-text-color: #ffffff;
   --footer-icon-bgr-color: rgba(255, 255, 255, 0.1);
   --footer-icon-bgr-hover-focus: #31d0aa;
+  --footer-subscribe-input-input-border: 1px solid rgba(255, 255, 255, 0.3);
+  --footer-subscribe-input-placeholder-color: rgba(255, 255, 255, 0.3);
+  --footer-subscribe-input-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  --subscribe-button-bgr-color: #4d5ae5;
 
   --portfolio-btn-bgr-color-normal: #f4f4fd;
   --portfolio-btn-border: #e7e9fc;
@@ -132,6 +138,7 @@ img {
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.04em;
+  border: none;
 }
 
 .section-title {
@@ -527,6 +534,8 @@ body {
 
 .footer-social-media-text {
   width: auto;
+  color: var(--footer-subtitle-social-media-text-color);
+  font-weight: 500;
 }
 
 .footer-icon-list {
@@ -550,6 +559,66 @@ body {
 .footer-icon-link:hover,
 .footer-icon-link:focus {
   background-color: var(--footer-icon-bgr-hover-focus);
+}
+
+.footer-subscribe-form {
+  margin-left: 80px;
+}
+.footer-subscribe-text {
+  width: auto;
+  margin-bottom: 16px;
+  color: var(--footer-subtitle-social-media-text-color);
+  font-weight: 500;
+}
+
+.footer-subscribe-box {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-subscribe-form input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  color: var(--footer-subtitle-subscribe-form-text-color);
+  background-color: inherit;
+  border: var(--footer-subscribe-input-input-border);
+  filter: var(--footer-subscribe-input-filter);
+  border-radius: 4px;
+
+  transition: border-color 250ms var(--standart-cubic);
+}
+
+.footer-subscribe-form input:hover,
+.footer-subscribe-form input:focus {
+  border-color: #4d5ae5;
+  outline: #4d5ae5;
+}
+
+.footer-subscribe-form input::placeholder {
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--footer-subscribe-input-placeholder-color);
+}
+
+.footer-subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  background-color: var(--subscribe-button-bgr-color);
+  color: var(--footer-subtitle-subscribe-form-text-color);
+  transition: background-color 250ms var(--standart-cubic);
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+  background-color: #404bbf;
 }
 
 /* --------------- PORTFOLIO BUTTONS--------------- */
