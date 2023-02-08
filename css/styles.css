@@ -75,6 +75,15 @@
   --close-icon-color: #000000;
   --close-btn-bgr-hover-color: #404bbf;
   --close-icon-hover-color: #ffffff;
+  --modal-title-color: #2e2f42;
+  --modal-form-label-color: #8e8f99;
+  --modal-form-item-input-border: 1px solid rgba(33, 33, 33, 0.2);
+  --modal-form-privat-policy-checkbox-text-color: #757575;
+  --modal-form-submit-button-bgr-color: #4d5ae5;
+  --modal-form-submit-button-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --modal-form-submit-button-text-color: #ffffff;
+  --privacy-policy-link-color: #4d5ae5;
+  --modal-form-item-hover-border: 1px solid #4d5ae5;
 
   --standart-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -324,6 +333,7 @@ body {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--hero-btn-bgr-color-hover-focus);
+  outline: var(--hero-btn-bgr-color-hover-focus);
 }
 
 /* --------------- BACKDROP --------------- */
@@ -373,12 +383,121 @@ body {
   border: var(--close-btn-border);
   border-radius: 50%;
   fill: var(--close-icon-color);
+  transition: background-color 250ms var(--standart-cubic),
+    fill 250ms var(--standart-cubic);
 }
 
 .modal-close-button:hover,
 .modal-close-button:focus {
   background-color: var(--close-btn-bgr-hover-color);
   fill: var(--close-icon-hover-color);
+}
+
+.modal-form {
+}
+
+.modal-form-box {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 24px 24px 24px;
+}
+
+.modal-form-title {
+  text-align: center;
+  color: var(--modal-title-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.modal-form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
+.modal-form-item label {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--modal-form-label-color);
+}
+
+.modal-form-item input {
+  height: 40px;
+  border: var(--modal-form-item-input-border);
+  border-radius: 4px;
+  transition: border 250ms var(--standart-cubic);
+}
+
+.modal-form-item textarea {
+  height: 120px;
+  padding: 8px 16px;
+  border: var(--modal-form-item-input-border);
+  border-radius: 4px;
+  resize: none;
+  transition: border 250ms var(--standart-cubic);
+}
+
+.modal-form-item:hover input,
+.modal-form-item:focus input,
+.modal-form-item:hover textarea,
+.modal-form-item:focus textarea {
+  border: var(--modal-form-item-hover-border);
+}
+
+.modal-form-item-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-policy-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  color: var(--modal-form-privat-policy-checkbox-text-color);
+}
+
+.privacy-policy-link {
+  color: var(--privacy-policy-link-color);
+  text-decoration: underline;
+  transition: color 250ms var(--standart-cubic);
+}
+
+.privacy-policy-link:hover,
+.privacy-policy-link:focus {
+  color: var(--hero-btn-bgr-color-hover-focus);
+}
+
+.modal-form-submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 169px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--modal-form-submit-button-bgr-color);
+  box-shadow: var(--modal-form-submit-button-box-shadow);
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  color: var(--modal-form-submit-button-text-color);
+  transition: background-color 250ms var(--standart-cubic);
+}
+
+.modal-form-submit-button:hover,
+.modal-form-submit-button:focus {
+  background-color: var(--hero-btn-bgr-color-hover-focus);
 }
 
 /* --------------- ADVANTAGES --------------- */

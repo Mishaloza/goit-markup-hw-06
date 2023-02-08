@@ -85,15 +85,55 @@
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
-
           <form class="modal-form">
-<!--             
+            <div class="modal-form-box">
+              <h2 class="modal-form-title">
+                Leave your contacts and we will call you back
+              </h2>
 
-        TUT PRODOVZHYTY
-
-
-
-             -->
+              <ul class="modal-form-list list">
+                <li class="modal-form-item item">
+                  <div class="modal-form-item-box">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" autofocus />
+                  </div>
+                </li>
+                <li class="modal-form-item item">
+                  <div class="modal-form-item-box">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" />
+                  </div>
+                </li>
+                <li class="modal-form-item item">
+                  <div class="modal-form-item-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                  </div>
+                </li>
+                <li class="modal-form-item item">
+                  <div class="modal-form-item-box">
+                    <label for="comment">Comment</label>
+                    <textarea
+                      name="comment"
+                      id="comment"
+                      rows="5"
+                      placeholder="Text input"
+                    >
+                    </textarea>
+                  </div>
+                </li>
+              </ul>
+              <div class="modal-form-policy-box">
+                <input type="checkbox" name="policy" id="policy" />
+                <label for="policy"
+                  >I accept the terms and conditions of the
+                  <a href="" class="privacy-policy-link link">Privacy Policy</a>
+                </label>
+              </div>
+              <button class="modal-form-submit-button button" type="submit">
+                Send
+              </button>
+            </div>
           </form>
         </div>
       </div>
