@@ -497,6 +497,7 @@ body {
 
 .modal-form-policy-box {
   display: flex;
+  text-align: center;
   align-items: center;
   margin-bottom: 24px;
   font-weight: 400;
@@ -545,7 +546,8 @@ body {
 }
 
 .policy {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .privacy-policy-link {
