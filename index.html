@@ -95,25 +95,74 @@
                 <li class="modal-form-item item">
                   <div class="modal-form-item-box">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" autofocus />
+                    <div class="modal-form-item-input-box">
+                      <input
+                        class="modal-form-input"
+                        type="text"
+                        name="name"
+                        id="name"
+                      />
+                      <svg
+                        class="modal-form-item-input-icon"
+                        width="18px"
+                        height="24px"
+                      >
+                        <use
+                          href="./images/symbol-defs.svg#icon-person-black"
+                        ></use>
+                      </svg>
+                    </div>
                   </div>
                 </li>
                 <li class="modal-form-item item">
                   <div class="modal-form-item-box">
                     <label for="phone">Phone</label>
-                    <input type="tel" name="phone" id="phone" />
+                    <div class="modal-form-item-input-box">
+                      <input
+                        class="modal-form-input"
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                      />
+                      <svg
+                        class="modal-form-item-input-icon"
+                        width="18px"
+                        height="24px"
+                      >
+                        <use
+                          href="./images/symbol-defs.svg#icon-phone-black"
+                        ></use>
+                      </svg>
+                    </div>
                   </div>
                 </li>
                 <li class="modal-form-item item">
                   <div class="modal-form-item-box">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" />
+                    <div class="modal-form-item-input-box">
+                      <input
+                        class="modal-form-input"
+                        type="email"
+                        name="email"
+                        id="email"
+                      />
+                      <svg
+                        class="modal-form-item-input-icon"
+                        width="18px"
+                        height="24px"
+                      >
+                        <use
+                          href="./images/symbol-defs.svg#icon-email-black"
+                        ></use>
+                      </svg>
+                    </div>
                   </div>
                 </li>
                 <li class="modal-form-item item">
                   <div class="modal-form-item-box">
                     <label for="comment">Comment</label>
                     <textarea
+                      class="textarea"
                       name="comment"
                       id="comment"
                       rows="5"
@@ -123,9 +172,19 @@
                 </li>
               </ul>
               <div class="modal-form-policy-box">
-                <input type="checkbox" name="policy" id="policy" />
-                <label for="policy"
-                  >I accept the terms and conditions of the
+                <input
+                  class="policy-checkbox"
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                />
+                <span class="modal-form-checkbox-bgr">
+                  <svg class="checked-icon" width="10" height="8">
+                    <use href="./images/symbol-defs.svg#icon-click"></use>
+                  </svg>
+                </span>
+                <label for="policy" class="policy">
+                  I accept the terms and conditions of the
                   <a href="" class="privacy-policy-link link">Privacy Policy</a>
                 </label>
               </div>
