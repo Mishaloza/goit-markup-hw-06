@@ -398,18 +398,17 @@ body {
 }
 
 .modal-form {
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-form-box {
   display: flex;
   flex-direction: column;
-  padding: 72px 24px 24px 24px;
 }
 
-.modal-form-title {
+.modal-form-text {
   text-align: center;
   color: var(--modal-title-color);
-  font-size: 16px;
   font-weight: 500;
 }
 
@@ -423,7 +422,6 @@ body {
 
 .modal-form-item label {
   margin-bottom: 4px;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -524,6 +522,7 @@ body {
   margin-right: 8px;
   transition: background-color 250ms var(--standart-cubic),
     border 250ms var(--standart-cubic);
+  cursor: pointer;
 }
 
 .checked-icon {
@@ -567,8 +566,7 @@ body {
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  width: 169px;
-  height: 56px;
+  padding: 16px 68px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -799,7 +797,6 @@ body {
 }
 
 .footer-subscribe-form input::placeholder {
-  padding: 8px 16px;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -811,8 +808,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  width: 165px;
-  height: 40px;
   padding: 8px 24px;
   background-color: var(--subscribe-button-bgr-color);
   color: var(--footer-subtitle-subscribe-form-text-color);
